@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10440" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader1" Height="288" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="864.0001" BackColor="16777215">
+      <Control Type="AR.Subreport" Name="SubReport4" Left="0" Top="432" Width="10440" Height="432" ReportName="-test_offset_list" />
+      <Control Type="AR.Label" Name="Label1" Left="0" Top="0" Width="2969.28" Height="288" Caption="Offset List" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="576" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\Public\Documents\shared mcamx9\common\reports\SST\Samples\Mill\SSM.xml" Pattern="//SZ" />
+  </DataSources>
+  <PageSettings GutterMargin="360" />
+  <Parameters />
+</ActiveReportsLayout>

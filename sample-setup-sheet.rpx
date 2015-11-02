@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10800" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader1" Height="1980" BackColor="16777215">
+      <Control Type="AR.Label" Name="Label34" Left="194.4" Top="0" Width="2609.28" Height="720" Caption="Logo can go here" />
+      <Control Type="AR.Label" Name="LabelSetupSheet" Left="0" Top="720" Width="10800" Height="720" Caption="  Setup Sheet" Style="background-color: #19609E; color: White; font-family: Arial; font-size: 16pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtDATE_LONG1" DataField="DATE-SHORT" Left="9000.001" Top="0" Width="1800" Height="720" Text="txtDATE_LONG1" Style="font-family: Arial; font-size: 11.25pt; text-align: right; vertical-align: bottom; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="txtDESCRIPTION1" DataField="DESCRIPTION" Left="5339.52" Top="900" Width="5339.52" Height="360" Text="txtDESCRIPTION1" Style="color: LightGrey; font-family: Arial; font-size: 11.25pt; font-style: italic; text-align: right; vertical-align: bottom; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtCustomerPartRevConcat1" Left="180" Top="1440" Width="10620" Height="540" Text="txtCustomerPartRevConcat1" Style="font-size: 12pt; vertical-align: middle; white-space: nowrap; ddo-char-set: 0" CountNullValues="1" />
+      <Control Type="AR.Line" Name="Line1" X1="0" Y1="1980" X2="10800" Y2="1980" LineColor="15570276" />
+      <Control Type="AR.Field" Name="txtMACHINE_GROUP_NAME1" DataField="MACHINE-GROUP-NAME" Left="6284.161" Top="1581.12" Width="4394.88" Height="288" Text="txtMACHINE_GROUP_NAME1" Style="color: SteelBlue; font-style: italic; text-align: right" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="12275.64" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox1" DataField="NCFILE/NCFILE-LONG" Left="1620" Top="1271.52" Width="9007.2" Height="288" Text="NCFILE/NCFILE-LONG" CanGrow="0" Style="font-size: 8pt; vertical-align: middle" />
+      <Control Type="AR.Field" Name="TextBox2" DataField="NCFILE/TIME-SHORT" Left="1620" Top="1847.52" Width="8280.001" Height="288" Text="NCFILE/TIME-SHORT" Style="font-family: Arial; font-size: 10pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label2" Left="0" Top="1847.52" Width="1620" Height="288" Caption="Est. Cycle Time:&#xD;&#xA;" Style="font-family: Arial; font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtMCXFILE_LONG1" DataField="MCXFILE-LONG" Left="1620" Top="989.28" Width="9000" Height="288" Text="txtMCXFILE_LONG1" CanGrow="0" Style="font-size: 8pt; vertical-align: middle" />
+      <Control Type="AR.Subreport" Name="SubReport1" Left="180" Top="4515.84" Width="10440" Height="288" ReportName="-test_tool_list" />
+      <Control Type="AR.Label" Name="Label3" Left="180" Top="4246.559" Width="2969.52" Height="269.28" Caption="Tool List" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label4" Left="0" Top="1271.52" Width="1620" Height="282" Caption="NC File Path:" Style="font-family: Arial; font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label5" Left="0" Top="989.28" Width="1620" Height="282" Caption="MCX File Path:" Style="font-family: Arial; font-size: 10pt; text-align: right; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label7" Left="180" Top="269.2804" Width="3794.4" Height="450.7198" Caption="Planning" Style="font-family: Arial; font-size: 16pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label6" Left="0" Top="2135.52" Width="1620" Height="288" Caption="Programmer:" Style="text-align: right" />
+      <Control Type="AR.Field" Name="txtPROGRAMMER1" DataField="PROGRAMMER" Left="1620" Top="2135.52" Width="1830.24" Height="288" Text="txtPROGRAMMER1" CanGrow="0" Style="font-family: Arial; font-size: 10pt; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label1" Left="180" Top="2969.28" Width="3794.4" Height="450.7198" Caption="Staging" Style="font-family: Arial; font-size: 16pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line2" X1="180" Y1="792" X2="1620" Y2="792" LineWeight="3" />
+      <Control Type="AR.Line" Name="Line3" X1="180" Y1="3493.44" X2="1620" Y2="3493.44" LineWeight="3" />
+      <Control Type="AR.Label" Name="Label9" Left="180" Top="3420" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label10" Left="180" Top="720.0002" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label11" Left="180" Top="2700" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label12" Left="180" Top="0.0003433228" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label13" Left="180" Top="3689.28" Width="720" Height="288" Caption="Notes:" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label14" Left="180" Top="3977.28" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txtNOTE11" DataField="NOTE1" Left="900" Top="3689.28" Width="9000.001" Height="288" Text="txtNOTE11" Style="vertical-align: bottom" />
+      <Control Type="AR.Label" Name="Label15" Left="180" Top="5505.12" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label17" Left="187.2" Top="7009.92" Width="2969.28" Height="288" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label18" Left="180" Top="5054.4" Width="3794.4" Height="450.7198" Caption="Setup" Style="font-family: Arial; font-size: 16pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label19" Left="180" Top="5774.399" Width="720" Height="288" Caption="Notes:" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label20" Left="187.2" Top="7534.081" Width="2969.52" Height="269.28" Caption="Operation List" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Line" Name="Line4" X1="180" Y1="5581.44" X2="1620" Y2="5581.44" LineWeight="3" />
+      <Control Type="AR.Subreport" Name="SubReport2" Left="187.2" Top="7803.358" Width="10440" Height="288" ReportName="-test_op_list" />
+      <Control Type="AR.PageBreak" Name="PageBreak1" Top="7416" Left="0" Width="0" Height="0" />
+      <Control Type="AR.Label" Name="Label8" Left="0" Top="1559.52" Width="1620" Height="288" Caption="Min. Travel: &#xD;&#xA;" Style="text-align: right" />
+      <Control Type="AR.Label" Name="txtTravelLimits" Left="1620" Top="1559.52" Width="8280.001" Height="288" Caption="Label16" />
+      <Control Type="AR.Field" Name="IMAGE_FILENAME" DataField="IMAGE" Visible="0" Left="7636.321" Top="2969.28" Width="1440" Height="288" Text="image_filename" CanGrow="0" />
+      <Control Type="AR.Image" Name="IMAGE_HOLDER" Left="5339.521" Top="1553.76" Width="5280.48" Height="2880" LineWeight="0" SizeMode="2" />
+      <Control Type="AR.Subreport" Name="SubReport3" Left="180" Top="6164.64" Width="10440" Height="288" ReportName="-test_mat_detail" />
+      <Control Type="AR.Label" Name="Label16" Left="187.2" Top="6452.641" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Subreport" Name="SubReport4" Left="180" Top="6721.919" Width="10440" Height="288" ReportName="-test_offset_sec" />
+      <Control Type="AR.Field" Name="txtNOTE2" DataField="NOTE2" Left="900" Top="5774.399" Width="9720.001" Height="288" Text="txtNOTE2" Style="vertical-align: bottom" />
+      <Control Type="AR.Line" Name="Line5" X1="180" Y1="8883.36" X2="1620" Y2="8883.36" LineWeight="3" />
+      <Control Type="AR.Label" Name="Label22" Left="180" Top="8091.361" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label23" Left="180" Top="8360.641" Width="3794.4" Height="450.7198" Caption="Engineering" Style="font-family: Arial; font-size: 16pt; vertical-align: middle; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label24" Left="180" Top="8811.36" Width="2969.52" Height="269.28" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label25" Left="180" Top="9080.641" Width="10440" Height="1440" Caption="Write any programming feedback inside this box." Style="background-color: WhiteSmoke; color: Gainsboro; font-family: Arial Narrow; font-size: 18pt; font-style: italic; text-align: center; vertical-align: middle; ddo-char-set: 0" />
+      <Control Type="AR.Label" Name="Label26" Left="187.2" Top="10520.64" Width="1440" Height="288" Caption="" />
+      <Control Type="AR.Label" Name="Label27" Left="187.2" Top="11096.64" Width="2700" Height="288" Caption="Write actual setup time here:" />
+      <Control Type="AR.Label" Name="Label28" Left="194.4" Top="11384.64" Width="2700" Height="288" Caption="Write actual cycle time here:" />
+      <Control Type="AR.Field" Name="TextBox4" Left="2880" Top="11096.64" Width="1440" Height="288" Text="____H ____M" Style="font-family: Consolas; font-size: 10.5pt; vertical-align: bottom; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="TextBox3" Left="2880" Top="11384.64" Width="1440" Height="288" Text="____M ____S" Style="font-family: Consolas; font-size: 10.5pt; vertical-align: bottom; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label29" Left="194.4" Top="11672.64" Width="3375.36" Height="288" Caption="Does the job traveler need changes?" />
+      <Control Type="AR.Label" Name="Label30" Left="2894.4" Top="10520.64" Width="7725.6" Height="288" Caption="Attach a sticky note or staple a new sheet of paper if you need more space." Style="color: Gainsboro; text-align: right" />
+      <Control Type="AR.Label" Name="Label31" Left="187.2" Top="10808.64" Width="2692.8" Height="288" Caption="Write your job number here:" />
+      <Control Type="AR.Label" Name="Label32" Left="2880" Top="10808.64" Width="1440" Height="288" Caption="___________" Style="vertical-align: bottom" />
+      <Control Type="AR.Label" Name="Label33" Left="3569.76" Top="11672.64" Width="750.2402" Height="288" Caption="____" Style="vertical-align: bottom" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="720" BackColor="16777215">
+      <Control Type="AR.Label" Name="Label21" Left="5460.48" Top="208.8" Width="5159.521" Height="288" Caption="Machining Setup Sheet Revision A 11/2/2015" Style="color: DarkGray; text-align: right" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\Public\Documents\shared mcamx9\common\reports\SST\Samples\Mill\SSM.xml" Pattern="//SETUPSHEET" />
+  </DataSources>
+  <CalculatedFields>
+    <Field Name="CustomerPartRevConcat" Formula="=CUSTOMER" FieldType="None" />
+  </CalculatedFields>
+  <Script><![CDATA[public bool ActiveReport_FetchData(bool eof)
+{
+	using System.Windows.Forms;
+	
+	// concatenate customer name, drawing number, and revision level
+	DataDynamics.ActiveReports.DataSources.XMLDataSource ds = 
+		(DataDynamics.ActiveReports.DataSources.XMLDataSource) rpt.DataSource;
+
+	string customer = ds.Field("CUSTOMER", false).ToString();
+	string drawing_number = ds.Field("DRAWING-NUMBER", false).ToString();
+	string drawing_revision = ds.Field("DRAWING-REVISION", false).ToString();
+	
+	txtCustomerPartRevConcat1.Text = customer + " " + drawing_number + " " + drawing_revision;
+	
+	// calculate programmed travel limits
+	try 
+	{
+		txtTravelLimits.Text = calcTravelLimits();
+	} 
+	catch (Exception e)
+	{
+		MessageBox.Show("got fucked off lulz");
+		MessageBox.Show(e.Message);
+	}
+	
+	return eof;
+}
+
+public string calcTravelLimits()
+{
+	DataDynamics.ActiveReports.DataSources.XMLDataSource ds = 
+		(DataDynamics.ActiveReports.DataSources.XMLDataSource) rpt.DataSource;
+
+	decimal x_min = System.Convert.ToDecimal(ds.Field("NCFILE/MIN-X", false));
+	decimal x_max = System.Convert.ToDecimal(ds.Field("NCFILE/MAX-X", false));
+	
+	decimal y_min = System.Convert.ToDecimal(ds.Field("NCFILE/MIN-Y", false));
+	decimal y_max = System.Convert.ToDecimal(ds.Field("NCFILE/MAX-Y", false));
+	
+	decimal z_min = System.Convert.ToDecimal(ds.Field("NCFILE/MIN-Z", false));
+	decimal z_max = System.Convert.ToDecimal(ds.Field("NCFILE/MAX-Z", false));
+	
+	decimal x_travel = findLinearDistance(x_min, x_max);
+	decimal y_travel = findLinearDistance(y_min, y_max);
+	decimal z_travel = findLinearDistance(z_min, z_max);
+
+	return "X" + x_travel + " x " + "Y" + y_travel + " x " + "Z" + z_travel;
+}
+
+public decimal findLinearDistance(decimal min, decimal max)
+{
+	return ( Math.Abs(min) + Math.Abs(max) );
+}]]></Script>
+  <PageSettings LeftMargin="720" RightMargin="720" TopMargin="360" BottomMargin="360" />
+  <Parameters />
+</ActiveReportsLayout>

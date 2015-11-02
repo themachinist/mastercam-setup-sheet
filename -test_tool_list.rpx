@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="9360.001" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader1" Height="288" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="2520" BackColor="16777215">
+      <Control Type="AR.Image" Name="IMAGE_HOLDER" Left="0" Top="0" Width="1800" Height="2160" LineWeight="0" SizeMode="2" />
+      <Control Type="AR.Field" Name="IMAGE_FILENAME" DataField="IMAGE3D" Visible="0" Left="149.7601" Top="1025.28" Width="1440" Height="288" Text="image_filename" CanGrow="0" />
+      <Control Type="AR.Label" Name="Label1" Left="1800" Top="0" Width="149.76" Height="288" Caption="#" Style="font-weight: bold" />
+      <Control Type="AR.Field" Name="txtNUMBER1" DataField="NUMBER" Left="1949.76" Top="0" Width="463.6801" Height="288" Text="237" Style="font-weight: bold" />
+      <Control Type="AR.Field" Name="txtDIAMETER1" DataField="DIAMETER" Left="2880" Top="856.7999" Width="1080" Height="288" Text="txtDIAMETER1" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtTIME_SHORT1" DataField="TIME-SHORT" Left="7560" Top="280.8" Width="1440" Height="288" Text="txtTIME_SHORT1" />
+      <Control Type="AR.Field" Name="txtTYPE1" DataField="TYPE" Left="2880" Top="288" Width="1080" Height="288" Text="txtTYPE1" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtOVERALL_LENGTH1" DataField="OVERALL-LENGTH" Left="5040" Top="575.9999" Width="1080" Height="288" Text="txtOVERALL_LENGTH1" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtFLUTE_LENGTH1" DataField="FLUTE-LENGTH" Left="5040" Top="1137.6" Width="1080" Height="288" Text="txtFLUTE_LENGTH1" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtSHANK_DIAMETER1" DataField="SHANK-DIAMETER" Left="2880" Top="568.8" Width="1080" Height="288" Text="txtSHANK_DIAMETER1" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtHOLDER_NAME1" DataField="HOLDER-NAME" Left="2880" Top="1584" Width="3240" Height="288" Text="txtHOLDER_NAME1" />
+      <Control Type="AR.Field" Name="txtNAME1" DataField="NAME" Left="2413.44" Top="0" Width="6946.561" Height="288" Text="txtNAME1" CanGrow="0" Style="font-weight: bold" />
+      <Control Type="AR.Label" Name="Label2" Left="1800" Top="288" Width="1080" Height="288" Caption="Type:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label3" Left="1800" Top="856.7999" Width="1080" Height="288" Caption="Dia." Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label4" Left="1800" Top="1144.8" Width="1080" Height="288" Caption="Flutes:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label5" Left="1800" Top="576" Width="1080" Height="288" Caption="Shank Dia." Style="text-align: right" />
+      <Control Type="AR.Field" Name="txtFLUTES1" DataField="FLUTES" Left="2880" Top="1144.8" Width="1080" Height="288" Text="txtFLUTES1" CanGrow="0" />
+      <Control Type="AR.Label" Name="Label6" Left="6120" Top="280.8" Width="1440" Height="288" Caption="Est. Cut Time:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label7" Left="3960" Top="1137.6" Width="1080" Height="288" Caption="Flute Len.:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label8" Left="3960" Top="849.6" Width="1080" Height="288" Caption="Shoulder:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label9" Left="3960" Top="568.8" Width="1080" Height="288" Caption="Hangout:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label10" Left="3960" Top="280.8" Width="1080" Height="288" Caption="Material:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label11" Left="1800" Top="1584" Width="1080" Height="288" Caption="Holder:" Style="text-align: right" />
+      <Control Type="AR.Label" Name="Label12" Left="1800" Top="1872" Width="1080" Height="288" Caption="Max Dia.:" Style="text-align: right" />
+      <Control Type="AR.Field" Name="txtHOLDER_DIAMETER_MAX1" DataField="HOLDER-DIAMETER-MAX" Left="2880" Top="1872" Width="1080" Height="288" Text="txtHOLDER_DIAMETER_MAX1" />
+      <Control Type="AR.Field" Name="txtSHOULDER_LENGTH1" DataField="SHOULDER-LENGTH" Left="5040" Top="849.6" Width="1080" Height="288" Text="txtSHOULDER_LENGTH1" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtMATERIAL1" DataField="MATERIAL" Left="5040" Top="288" Width="1080" Height="288" Text="txtMATERIAL1" CanGrow="0" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="576" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\Public\Documents\shared mcamx9\common\reports\SST\Samples\Mill\SSM.xml" Pattern="//NCFILE/TOOLS/TOOL" />
+  </DataSources>
+  <PageSettings GutterMargin="360" />
+  <Parameters />
+</ActiveReportsLayout>

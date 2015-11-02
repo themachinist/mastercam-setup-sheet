@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10440" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader1" Height="0" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="5085" ColumnCount="2" ColumnDirection="1" BackColor="16777215" CanGrow="0">
+      <Control Type="AR.Field" Name="txtNAME1" DataField="GCODE" Left="0" Top="0" Width="2520" Height="476.64" Text="GCODE" CanGrow="0" Style="background-color: WhiteSmoke; font-size: 9.75pt; font-weight: bold; text-align: center; vertical-align: middle; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="TextBox3" DataField="VIEW" Left="2520" Top="0" Width="2340" Height="476.64" Text="VIEW" CanGrow="0" Style="border-bottom-width: 3px; border-bottom-style: : : : : : : : : : : : : : : : : : : : : : : : solid; border-top-color: #19609e; border-right-color: #19609e; background-color: WhiteSmoke; text-align: center; vertical-align: middle" />
+      <Control Type="AR.Image" Name="IMAGE_HOLDER" Left="0" Top="476.64" Width="4860" Height="4320" LineColor="16119285" SizeMode="2" />
+      <Control Type="AR.Field" Name="IMAGE_FILENAME" DataField="CAPTURE/IMAGE" Visible="0" Left="1769.76" Top="2593.44" Width="1440" Height="288" Text="image_filename" CanGrow="0" />
+      <Control Type="AR.Label" Name="Label1" DataField="CAPTURE/CAPTION" Left="0" Top="4796.64" Width="4860" Height="288" Caption="Label1" Style="text-align: center" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="360" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\Public\Documents\shared mcamx9\common\reports\SST\Samples\Mill\SSM.xml" Pattern="(//SETUPSHEET/NCFILE)[1]/OFFSETS/OFFSET" />
+  </DataSources>
+  <Script><![CDATA[
+]]></Script>
+  <PageSettings GutterMargin="360" />
+  <Parameters />
+</ActiveReportsLayout>

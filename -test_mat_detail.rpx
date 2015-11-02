@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10440" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader1" Height="288" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="2160" BackColor="16777215">
+      <Control Type="AR.Image" Name="IMAGE_HOLDER" Left="6480" Top="0" Width="2880" Height="2160" LineWeight="0" SizeMode="2" />
+      <Control Type="AR.Field" Name="IMAGE_FILENAME" DataField="IMAGE" Visible="0" Left="7305.121" Top="1294.56" Width="1440" Height="288" Text="image_filename" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtMATERIAL1" DataField="MATERIAL" Left="1440" Top="576" Width="2880" Height="288" Text="txtMATERIAL1" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtSTOCK_SHAPE1" DataField="STOCK-SHAPE" Left="1440" Top="864.0001" Width="2880" Height="288" Text="txtSTOCK_SHAPE1" Style="vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label2" Left="180" Top="1152" Width="1260" Height="288" Caption="Stock Size:" Style="text-align: left; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label3" Left="180" Top="864.0001" Width="1260" Height="288" Caption="Stock Shape:" Style="text-align: left; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label4" Left="180" Top="576" Width="1260" Height="288" Caption="Stock Type:" Style="text-align: left; vertical-align: top" />
+      <Control Type="AR.Field" Name="txtSTOCK_XYZ1" DataField="STOCK-XYZ" Left="1440" Top="1152" Width="2880" Height="288" Text="txtSTOCK_XYZ1" Style="vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label20" Left="0" Top="144" Width="2969.28" Height="288" Caption="Material Info" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label5" Left="0" Top="432" Width="2969.28" Height="144" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; text-align: left; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label7" Left="0" Top="0" Width="2969.28" Height="144" Caption="" Style="font-family: Arial; font-size: 11.25pt; font-style: italic; ddo-char-set: 1" />
+      <Control Type="AR.Label" Name="Label1" Left="180" Top="1582.56" Width="619.2" Height="288" Caption="Notes:&#xD;&#xA;" Style="text-align: left; vertical-align: middle" />
+      <Control Type="AR.Field" Name="TextBox1" DataField="../NOTE3" Left="799.1998" Top="1582.56" Width="5400" Height="288" Text="../NOTE3" Style="vertical-align: middle" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="576" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\Public\Documents\shared mcamx9\common\reports\SST\Samples\Mill\SSM.xml" Pattern="//SZ" />
+  </DataSources>
+  <PageSettings GutterMargin="360" />
+  <Parameters />
+</ActiveReportsLayout>

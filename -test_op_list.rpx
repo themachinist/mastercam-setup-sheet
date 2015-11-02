@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10800" DocumentName="ARNet Document" ScriptLang="C#" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="PageHeader" Name="PageHeader1" Height="0" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail" Height="2448" BackColor="16777215">
+      <Control Type="AR.Image" Name="IMAGE_HOLDER" Left="0" Top="576" Width="1800" Height="1440" LineWeight="0" SizeMode="2" />
+      <Control Type="AR.Field" Name="IMAGE_FILENAME" DataField="IMAGE" Visible="0" Left="0" Top="1728" Width="1440" Height="288" Text="image_filename" CanGrow="0" />
+      <Control Type="AR.Field" Name="txtTIME_SHORT1" DataField="TIME-SHORT" Left="0" Top="2016" Width="1800" Height="288" Text="txtTIME_SHORT1" Style="text-align: center; vertical-align: top" />
+      <Control Type="AR.Field" Name="txtNAME1" DataField="NAME" Left="0" Top="144" Width="4680" Height="432" Text="Operation Name" CanGrow="0" Style="background-color: WhiteSmoke; font-size: 9.75pt; font-weight: bold; vertical-align: middle; ddo-char-set: 0" />
+      <Control Type="AR.Field" Name="txtCOMMENT1" DataField="COMMENT" Left="1800" Top="1872" Width="8640.001" Height="576.0001" Text=" COMMENT" Style="text-align: center; vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtCOOLANT1" DataField="COOLANT" Left="6120" Top="1584" Width="1440" Height="288" Text="txtCOOLANT1" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtSPINDLE_SPEED1" DataField="SPINDLE-SPEED" Left="6120" Top="720" Width="1440" Height="288" Text="txtSPINDLE_SPEED1" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtFEEDRATE1" DataField="TOOL/FEEDRATE-VALUE" Left="6120" Top="1296" Width="1440" Height="288" Text="FEEDRATE VALUE" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtRETRACT_PLANE1" DataField="RETRACT-PLANE" Left="3240" Top="1008" Width="1440" Height="288" Text="txtRETRACT_PLANE1" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtDEPTH1" DataField="DEPTH" Left="3240" Top="1584" Width="1440" Height="288" Text="txtDEPTH1" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtCLEARANCE_PLANE1" DataField="CLEARANCE-PLANE" Left="3240" Top="720" Width="1440" Height="288" Text="txtCLEARANCE_PLANE1" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtFEED_PLANE1" DataField="FEED-PLANE" Left="3240" Top="1296" Width="1440" Height="288" Text="txtFEED_PLANE1" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label1" Left="1800" Top="720" Width="1440" Height="288" Caption="Clearance:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label2" Left="1800" Top="1008" Width="1440" Height="288" Caption="Retract:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label3" Left="1800" Top="1296" Width="1440" Height="288" Caption="Feed Plane:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label4" Left="1800" Top="1584" Width="1440" Height="288" Caption="Max Depth:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label5" Left="4680" Top="720" Width="1440" Height="288" Caption="RPM:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label6" Left="4680" Top="1008" Width="1440" Height="288" Caption="Plunge:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label7" Left="4680" Top="1296" Width="1440" Height="288" Caption="Feedrate:&#xD;&#xA;" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label8" Left="4680" Top="1584" Width="1440" Height="288" Caption="Coolant:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Field" Name="TextBox7" DataField="TOOL/NUMBER" Left="4860" Top="144" Width="449.28" Height="432" Text="###" Style="background-color: WhiteSmoke; vertical-align: middle" />
+      <Control Type="AR.Field" Name="TextBox3" DataField="TOOL/NAME" Left="5309.28" Top="144" Width="5490.72" Height="432" Text="TOOL/NAME" CanGrow="0" Style="border-bottom-width: 3px; border-bottom-style: : : : : : : : : : : solid; border-top-color: #19609e; border-right-color: #19609e; background-color: WhiteSmoke; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label10" Left="4680" Top="144" Width="180" Height="432" Caption="#" Style="background-color: WhiteSmoke; text-align: right; vertical-align: middle" />
+      <Control Type="AR.Line" Name="Line1" X1="0" Y1="2448" X2="10800" Y2="2448" LineColor="14474460" />
+      <Control Type="AR.Label" Name="Label9" Left="1800" Top="576" Width="1440" Height="144" Caption="" />
+      <Control Type="AR.Field" Name="TextBox2" DataField="TOOL/PLUNGE-VALUE" Left="6120" Top="1008" Width="1440" Height="288" Text="TOOL/PLUNGE-VALUE" CanGrow="0" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtSTOCK_TO_LEAVE_XY1" DataField="STOCK-TO-LEAVE-XY" Left="8280.001" Top="1008" Width="720" Height="288" Text="txtSTOCK_TO_LEAVE_XY1" Style="vertical-align: middle" />
+      <Control Type="AR.Field" Name="txtSTOCK_TO_LEAVE_Z1" DataField="STOCK-TO-LEAVE-Z" Left="9720.001" Top="1008" Width="720" Height="288" Text="txtSTOCK_TO_LEAVE_Z1" Style="vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label11" Left="7560" Top="720" Width="2880" Height="288" Caption="Material leftover for finish pass:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label12" Left="7560" Top="1008" Width="720" Height="288" Caption="XY:" Style="text-align: right; vertical-align: middle" />
+      <Control Type="AR.Label" Name="Label13" Left="9000.001" Top="1008" Width="720" Height="288" Caption="Z:" Style="text-align: right; vertical-align: middle" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter1" Height="360" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\Public\Documents\shared mcamx9\common\reports\SST\Samples\Mill\SSM.xml" Pattern="//SETUPSHEET/NCFILE/OPERATION" />
+  </DataSources>
+  <Script><![CDATA[
+]]></Script>
+  <PageSettings GutterMargin="360" />
+  <Parameters />
+</ActiveReportsLayout>
