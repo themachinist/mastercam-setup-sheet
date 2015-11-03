@@ -7,8 +7,7 @@
     <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
   </StyleSheet>
   <Sections>
-    <Section Type="PageHeader" Name="PageHeader1" Height="0" BackColor="16777215" />
-    <Section Type="Detail" Name="Detail" Height="2448" BackColor="16777215">
+    <Section Type="Detail" Name="Detail" Height="2448" BackColor="16777215" KeepTogether="1">
       <Control Type="AR.Image" Name="IMAGE_HOLDER" Left="0" Top="576" Width="1800" Height="1440" LineWeight="0" SizeMode="2" />
       <Control Type="AR.Field" Name="IMAGE_FILENAME" DataField="IMAGE" Visible="0" Left="0" Top="1728" Width="1440" Height="288" Text="image_filename" CanGrow="0" />
       <Control Type="AR.Field" Name="txtTIME_SHORT1" DataField="TIME-SHORT" Left="0" Top="2016" Width="1800" Height="288" Text="txtTIME_SHORT1" Style="text-align: center; vertical-align: top" />
@@ -30,7 +29,7 @@
       <Control Type="AR.Label" Name="Label7" Left="4680" Top="1296" Width="1440" Height="288" Caption="Feedrate:&#xD;&#xA;" Style="text-align: right; vertical-align: middle" />
       <Control Type="AR.Label" Name="Label8" Left="4680" Top="1584" Width="1440" Height="288" Caption="Coolant:" Style="text-align: right; vertical-align: middle" />
       <Control Type="AR.Field" Name="TextBox7" DataField="TOOL/NUMBER" Left="4860" Top="144" Width="449.28" Height="432" Text="###" Style="background-color: WhiteSmoke; vertical-align: middle" />
-      <Control Type="AR.Field" Name="TextBox3" DataField="TOOL/NAME" Left="5309.28" Top="144" Width="5490.72" Height="432" Text="TOOL/NAME" CanGrow="0" Style="border-bottom-width: 3px; border-bottom-style: : : : : : : : : : : solid; border-top-color: #19609e; border-right-color: #19609e; background-color: WhiteSmoke; vertical-align: middle" />
+      <Control Type="AR.Field" Name="TextBox3" DataField="TOOL/NAME" Left="5309.28" Top="144" Width="5490.72" Height="432" Text="TOOL/NAME" CanGrow="0" Style="border-bottom-width: 3px; border-bottom-style: : : : : : : : : : : : solid; border-top-color: #19609e; border-right-color: #19609e; background-color: WhiteSmoke; vertical-align: middle" />
       <Control Type="AR.Label" Name="Label10" Left="4680" Top="144" Width="180" Height="432" Caption="#" Style="background-color: WhiteSmoke; text-align: right; vertical-align: middle" />
       <Control Type="AR.Line" Name="Line1" X1="0" Y1="2448" X2="10800" Y2="2448" LineColor="14474460" />
       <Control Type="AR.Label" Name="Label9" Left="1800" Top="576" Width="1440" Height="144" Caption="" />
@@ -41,7 +40,6 @@
       <Control Type="AR.Label" Name="Label12" Left="7560" Top="1008" Width="720" Height="288" Caption="XY:" Style="text-align: right; vertical-align: middle" />
       <Control Type="AR.Label" Name="Label13" Left="9000.001" Top="1008" Width="720" Height="288" Caption="Z:" Style="text-align: right; vertical-align: middle" />
     </Section>
-    <Section Type="PageFooter" Name="PageFooter1" Height="360" BackColor="16777215" />
   </Sections>
   <ReportComponentTray />
   <DataSources>
