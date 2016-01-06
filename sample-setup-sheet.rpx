@@ -65,7 +65,7 @@
       <Control Type="AR.Field" Name="TextBox4" Left="2880" Top="11096.64" Width="1440" Height="288" Text="____H ____M" Style="font-family: Consolas; font-size: 10.5pt; vertical-align: bottom; ddo-char-set: 1" />
       <Control Type="AR.Field" Name="TextBox3" Left="2880" Top="11384.64" Width="1440" Height="288" Text="____M ____S" Style="font-family: Consolas; font-size: 10.5pt; vertical-align: bottom; ddo-char-set: 1" />
       <Control Type="AR.Label" Name="Label29" Left="194.4" Top="11672.64" Width="3375.36" Height="288" Caption="Does the job traveler need changes?" />
-      <Control Type="AR.Label" Name="Label30" Left="2894.4" Top="10520.64" Width="7725.6" Height="288" Caption="Attach a sticky note or staple a new sheet of paper if you need more space." Style="color: Gainsboro; text-align: right" />
+      <Control Type="AR.Label" Name="Label30" Left="2894.4" Top="10520.64" Width="7725.601" Height="288" Caption="Attach a sticky note or staple a new sheet of paper if you need more space." Style="color: Gainsboro; text-align: right" />
       <Control Type="AR.Label" Name="Label31" Left="187.2" Top="10808.64" Width="2692.8" Height="288" Caption="Write your job number here:" />
       <Control Type="AR.Label" Name="Label32" Left="2880" Top="10808.64" Width="1440" Height="288" Caption="___________" Style="vertical-align: bottom" />
       <Control Type="AR.Label" Name="Label33" Left="3569.76" Top="11672.64" Width="750.2402" Height="288" Caption="____" Style="vertical-align: bottom" />
@@ -102,7 +102,7 @@
 	} 
 	catch (Exception e)
 	{
-		MessageBox.Show(e.Message);
+		txtTravelLimits.Text = "Travel could not be calculated.";
 	}
 	
 	return eof;
@@ -122,14 +122,14 @@ public string calcTravelLimits()
 	decimal z_min = System.Convert.ToDecimal(ds.Field("NCFILE/MIN-Z", false));
 	decimal z_max = System.Convert.ToDecimal(ds.Field("NCFILE/MAX-Z", false));
 	
-	decimal x_travel = findLinearDistance(x_min, x_max);
-	decimal y_travel = findLinearDistance(y_min, y_max);
-	decimal z_travel = findLinearDistance(z_min, z_max);
+	decimal x_travel = findDistance(x_min, x_max);
+	decimal y_travel = findDistance(y_min, y_max);
+	decimal z_travel = findDistance(z_min, z_max);
 
-	return "X" + x_travel + " x " + "Y" + y_travel + " x " + "Z" + z_travel;
+	return "X" + System.Convert.ToString(x_travel) + " x " + "Y" + System.Convert.ToString(y_travel) + " x " + "Z" + System.Convert.ToString(z_travel);
 }
 
-public decimal findLinearDistance(decimal min, decimal max)
+public decimal findDistance(decimal min, decimal max)
 {
 	return ( Math.Abs(min) + Math.Abs(max) );
 }]]></Script>
